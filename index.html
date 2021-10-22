@@ -10,36 +10,28 @@
 <body>
     
 
-    <div class="main">
-        <h1>Mark14 -<span style="color: rgb(124, 40, 40);"> Stocks</span></h1>
-        <div style="margin-bottom: 0.5rem;">
-            <img src="/profitorloss.jpg" alt="" width="250px">
-        </div>
-        <table>
-            <tr>
-                <td>
-                    <label for="initial-price">Initial Price : </label>
-                </td>
-                <td>
-                    <input id="initial-price" type="number" placeholder="Enter Initial Price Here"/>            
-                </td>
-            </tr>
-
-
-            <tr>
-                <td><label for="stocks-quantity">Quantity Of Stocks : </label></td>
-                <td><input id="stocks-quantity" type="number" placeholder="Enter the Number of Stocks bought">                </td>
-            </tr>
-            <tr>
-                <td><label for="current-price">Current Price : </label></td>
-                <td><input id="current-price" type="number" placeholder="Enter The Current Price Of Stocks">                </td>
-            </tr>
-        </table>
-        <button id="submit-btn">Tell Me!</button>
-        <div id="output-box">
-       </div>
+<div class="main">
+    <div class="left-main">
+        <h1>Check Profit/Loss on your Stock</h1>        
+        
+        <label>
+        <input id="initial-price" placeholder="Enter Cost Price of Stock" type="text" required>Purchase Price</label>
+        <br>
+        <label>
+        <input id="stocks-quantity" placeholder="Enter Quantity of Stock" type="text" required>Stock Quantity</label>
+        <br>
+        <label>
+        <input id="current-price" placeholder="Enter Current Price of Stock" type="text" required>Current Price</label>
+        <button type="submit" id="submit-btn">Check</button>
+    
+        <div id="output-box"></div>
 
     </div>
+    <div class="right-main">
+        <img src="/stockbuilding2.jpg" alt="">
+    </div>  
+
+</div>
 
     <script src="/app.js"></script>
 </body>

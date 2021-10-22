@@ -37,7 +37,7 @@ function submitHandler(){
 function showOutput(msg,status){
     switch (status) {
         case "PROFIT":
-            outputBox.style.color = 'green';
+            outputBox.style.color = 'yellow';
             outputBox.innerText = msg;
             
             break;
@@ -46,7 +46,7 @@ function showOutput(msg,status){
             outputBox.innerText = msg;
             break;
         case "else":
-            outputBox.style.color = 'black';
+            outputBox.style.color = 'white';
             outputBox.innerText = msg;
             break;
         default:
