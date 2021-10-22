@@ -9,6 +9,7 @@ body{
 }
 input{
     padding: 0.5rem;
+
 }
 button{
     margin-top: 0.5rem;
@@ -19,7 +20,7 @@ button{
     font-size: large;
     font-weight: bold;
     border-radius: 5px;
-    box-shadow: 5px 5px #127b9b;
+    box-shadow: 5px 5px #70b4c9;
 } 
 button:hover{
     background-image: url("/stock.jpeg");
