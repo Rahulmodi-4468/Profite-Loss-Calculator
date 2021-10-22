@@ -8,21 +8,38 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>Mark14 - Stocks</h1>
+    
 
-    <main>
-        <label for="initial-price">Initial Price
+    <div class="main">
+        <h1>Mark14 - Stocks</h1>
+        <div>
+            <img src="/profitorloss.jpg" alt="" width="250px">
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <label for="initial-price">Initial Price : </label>
+                </td>
+                <td>
+                    <input id="initial-price" type="number" placeholder="Enter Initial Price Here"/>            
+                </td>
+            </tr>
 
-        <input id="initial-price" type="number" placeholder="Enter Initial Price Here"/></label>
 
-        <label for="stocks-quantity">Quantity Of Stocks
-        <input id="stocks-quantity" type="number" placeholder="Enter the Number of Stocks bought"></label>
-
-        <label for="current-price">Current Price
-        <input id="current-price" type="number" placeholder="Enter The Current Price Of Stocks"></label>
+            <tr>
+                <td><label for="stocks-quantity">Quantity Of Stocks : </label></td>
+                <td><input id="stocks-quantity" type="number" placeholder="Enter the Number of Stocks bought">                </td>
+            </tr>
+            <tr>
+                <td><label for="current-price">Current Price : </label></td>
+                <td><input id="current-price" type="number" placeholder="Enter The Current Price Of Stocks">                </td>
+            </tr>
+        </table>
         <button id="submit-btn">Tell Me!</button>
-        <div id="output-box"></div>
-    </main>
+        <div id="output-box">
+       </div>
+
+    </div>
 
     <script src="/app.js"></script>
 </body>

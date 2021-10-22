@@ -5,18 +5,21 @@ var currentPrice = document.querySelector('#current-price');
 var submitBtn = document.querySelector('#submit-btn');
 var  outputBox = document.querySelector('#output-box');
 
+var pro = document.querySelector('#profit');
+var los = document.querySelector('#loss');
+
 
 function calculateProfiteAndLoss(initial,quantity,current){
     if(initial > current){
         var loss = (initial - current) * quantity;
         var lossPercentage = (loss/initial) * 100;
-        showOutput(`Hey the loss is  ${loss} and the percent  ${lossPercentage}%`);
+        showOutput(`Hey the loss is  ${loss} and the percent  ${lossPercentage}%`,"LOSS");
     }else if(current > initial){
         var profit = (current - initial) * quantity;
         var profitPercentage = (profit / initial ) * 100;
-        showOutput(`Hey the profite is  ${profit} and the percent  ${profitPercentage}%`);
+        showOutput(`Hey the profit is  ${profit} and the percent  ${profitPercentage}%`,"PROFIT");
     }else{
-        showOutput("NO Pain No Gain");
+        showOutput("NO Pain No Gain","else");
     }
 }
 
@@ -35,9 +38,26 @@ function submitHandler(){
 }
 
 
-function showOutput(msg){
-    outputBox.style.color = 'green';
-    outputBox.innerText = msg;
+function showOutput(msg,status){
+    switch (status) {
+        case "PROFIT":
+            outputBox.style.color = 'green';
+            outputBox.innerText = msg;
+            
+            break;
+        case "LOSS":
+            outputBox.style.color = 'red';
+            outputBox.innerText = msg;
+            los.style.display = 'block';
+            break;
+        case "else":
+            outputBox.style.color = 'black';
+            outputBox.innerText = msg;
+            break;
+        default:
+            break;
+    }
+    
 }
 
 

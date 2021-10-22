@@ -1,7 +1,34 @@
 body{
     text-align: center;
+    background-color: antiquewhite;
 }
-label{
-    display: block;
-    padding-bottom: 1rem;
+.main{
+    max-width: 350px;
+    margin: auto;
+    
+    padding: 1rem;
 }
+input{
+    padding: 0.5rem;
+}
+button{
+    margin-top: 0.5rem;
+    padding: 0.7rem 2rem;
+    background-image: url("/stock1.jpg");
+    background-size: contain;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+
+} 
+button:hover{
+    background-image: url("/stock.jpeg");
+    background-size: cover;
+    color: white;
+    transition: 0.5s;
+}
+
+
+/*
+genaralization overfiting model capacity underfitting iit universal aproximax theorams validation sets cross validation threshold cross validation parameter astimation( bays and variance),min square error , derivation,standard error ,deep learning networks optimimization ,linear vs non linear models, cost function,softmax function forward pass backword pass,consitdration in design depp network artitecture,univwersal aproximate theorrams,vanilaMLP-artitecture,relu,variant of relu,dropout cropt connect,regulation techniq,cnn vs regular rural network,convolution vs cross corelation,types of cells,sparse connectivity,kernel size padding,convolution formulas,sparsity ad vs disadva,parameter sharing of adv,dis,option to cnn artitecture,pulling layers ,pulling function(avg,max,),calculation in cnn, 
+*/
