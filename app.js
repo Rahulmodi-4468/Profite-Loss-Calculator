@@ -5,10 +5,6 @@ var currentPrice = document.querySelector('#current-price');
 var submitBtn = document.querySelector('#submit-btn');
 var  outputBox = document.querySelector('#output-box');
 
-var pro = document.querySelector('#profit');
-var los = document.querySelector('#loss');
-
-
 function calculateProfiteAndLoss(initial,quantity,current){
     if(initial > current){
         var loss = (initial - current) * quantity;
@@ -48,7 +44,6 @@ function showOutput(msg,status){
         case "LOSS":
             outputBox.style.color = 'red';
             outputBox.innerText = msg;
-            los.style.display = 'block';
             break;
         case "else":
             outputBox.style.color = 'black';
